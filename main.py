@@ -51,8 +51,12 @@ while loop:
     elif selection == "4":
         print("Roll Dice Until Snake Eyes")
 
-        # Totals
-        dice_rolls = 0
+        while n != 2:
+            dice1 = random.randrange(1, 7)
+            dice2 = random.randrange(1, 7)
+            dice_sum = dice1 + dice2
+            print(str(dice1) + "," + str(dice2) +
+                  " (sum: " + str(dice_sum) + ")")
     elif selection == "5":
         print("EXIT")
         loop = False
